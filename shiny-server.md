@@ -1,8 +1,11 @@
-Accessing production server via ssh tunneling:
-KID: kerberos ID
-server_name will be something like #nyumc.org@{}@psmp.nyumc.org
+# shiny server notes
 
-ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeychecking=no KID@KID{server_name}
+Accessing server via CyberArk SSH tunneling (need to modify for specific user and server):
+
+```
+ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeychecking=no \
+  [KerberosID]@[KerberosID]#nyumc.org@[sxxxxxxxxxxvm00]@psmp.nyumc.org
+```
 
 
 Copying files from local machine to production server (uploading apps):
