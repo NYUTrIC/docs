@@ -34,6 +34,8 @@ Install R packages globally as root (run `sudo R`).
 
 Additional notes:
 1. In order to edit max memory for applications:
+
   sudo vim /etc/nginx/nginx.conf
+
   add client_max_body_size 1000M; for 1000 megs (1 GB) to http{} block (:wq to save), followed by:
   sudo nginx -s reload
