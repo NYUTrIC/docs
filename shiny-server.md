@@ -37,5 +37,9 @@ Additional notes:
 
     sudo vim /etc/nginx/nginx.conf
 
-    add client_max_body_size 1000M (for 1000 megs (1 GB) )to http{} block (:wq to save), followed by:
+    add client_max_body_size 1000M (for 1000 megs (1 GB) )to http{} block (:wq to save)
+    followed by:
+    Tests if syntax is ok:
+    sudo nginx -t
+    Reloads server with new instructions
     sudo nginx -s reload
